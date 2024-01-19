@@ -1,0 +1,71 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Contact Form</title>
+</head>
+  <h1>Contact Form</h1>
+
+  <form>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" name="name"
+      placeholder="Enter your name" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="text" name="email"
+      placeholder="Enter your Email" required>
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <textarea name="massage" cols="20" rows="5"></textarea>
+    </div>
+
+    <div>
+      <label for="subject">Subject:</label>
+      <input type="checkbox" name="HTML" value="HTML">
+      <label for="HTML">HTML</label>
+      <input type="checkbox" name="CSS" value="CSS">
+      <label for="CSS">CSS</label>
+      <input type="checkbox" name="JS" value="JS">
+      <label for="JS">JS</label>
+    </div>
+
+    <div>
+      <label for="phone">Phone:</label>
+      <input type="number" name="phone"
+      placeholder="Enter your phone number" required>
+    </div>
+
+    <div>
+      <label for="priority">Priority:</label> 
+      <!-- low, medium, high -->
+      <select name="priority">
+        <option value="low">low</option>
+        <option value="medium">medium</option>
+        <option value="high">high</option>
+    </select>
+    </div>
+
+    <div>
+      <label>Newsletter Subscription:</label>
+      <input type="radio" name="options" value="yes">
+      <label for="yes">Yes</label>
+      <input type="radio" name="options" value="no">
+      <label for="no">No</label>
+    </div>
+
+    <div>
+      <label>Gender:</label>
+      <select name="gender">
+        <option value="female">female</option>
+        <option value="male">male</option>
+      </select>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
