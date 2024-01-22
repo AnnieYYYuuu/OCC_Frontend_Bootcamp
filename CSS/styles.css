@@ -1,0 +1,37 @@
+.font-family-size {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.line-height {
+    line-height: 5;
+}
+
+.letter-spacing {
+    letter-spacing: 5px;
+}
+
+.text-shadow{
+    text-shadow: 5px 5px 5px rgba(306, 2, 1, 5);
+}
+
