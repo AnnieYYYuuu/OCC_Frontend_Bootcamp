@@ -1,0 +1,141 @@
+.boxModel {
+    background-color: white;
+    border: black 5px solid;
+    padding:20px;
+    margin:30px 10px 0 40px;
+    /* 1 value = all sides 
+    2 values = top and bottom, right and left
+    3 values = top, right and left, bottom
+    4 values = top, right, bottom, left
+    */
+    border-color: aqua;
+    border-width: 10px;
+    border-style: double;
+    border-left-style: dotted;
+    border-right-color: rgb(255, 127, 249);
+    border-radius: 15px;
+}
+
+.box-content {
+    width:200px;
+    height: 200px;
+    padding: 20px;
+    background-color: burlywood;
+    border: black 2px solid;
+    box-sizing: content-box;
+}
+
+.box-border {
+    width:200px;
+    height: 200px;
+    padding: 20px;
+    background-color: lightcoral;
+    border: black 2px solid;
+    box-sizing: border-box;
+}
+
+/* Display Property */
+.block {
+    background-color: violet;
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.inline {
+    background-color: red;
+    height: 200px;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+
+/* Element Positioning */
+.static {
+    background-color: blue;
+    position: static;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.relative {
+    background-color: gold;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: 20px;
+    top: 10px;
+}
+
+.absolute  {
+    background-color: green;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 10px;
+}
+
+.fixed {
+    background-color: hotpink;
+    position: fixed;
+    width: 200px;
+    height: 50px;
+    left: 200px;
+    top: 10px;
+}
+
+.sticky {
+    background-color: lawngreen;
+    position: sticky;
+    width: 200px;
+    height: 50px;
+    left: 10px;
+    top: 10px;
+}
+
+/* float */
+
+.float-right {
+    width: 200px;
+    height: 50px;
+    background-color: indianred;
+    float: right;
+}
+
+.float-left {
+    width: 200px;
+    height: 20px;
+    background-color: aquamarine;
+    float: left;
+}
+
+.clear-floats {
+    clear:both;
+    background-color: cadetblue;
+}
+
+/* Centering Elements */
+.parent-box {
+    height: 100px;
+    width: 300px;
+    background-color: darkcyan;
+    margin: auto;
+}
+
+.center-vertical {
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+}
+
+.center-horizontal-vertical {
+    background-color: firebrick;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
