@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+</head>
+<body>
+    <form id="myForm">
+        <div id="calculate"></div>
+        Enter a Number:
+        <input type="text" id="number">
+        <br><br>
+        <span id="numberError" style="color: red"></span>
+        <button type="submit">Check Number</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('myForm');
+        const calculate = document.getElementById("calculate")
+        const numberInput = document.getElementById("number");
+        const numberError = document.getElementById("numberError");
+
+
+        form.addEventListener('submit', handleSubmit);
+
+        // form submit event handler
+        function handleSubmit(event){
+            event.preventDefault(); //prevents form from submitting
+
+            // validate form inputs
+            const isValid = validateForm();
+
+            if (isValid) {
+            console.log('Form submitted successfully');
+            const numberValue = numberInput.value;
+            
+                if (numberValue % 2 == 0) {
+                    calculate.textContent = "Even";
+                } 
+                else if (numberValue % 2 == 1) {
+                    calculate.textContent = "Odd";
+                } 
+                else {
+                    calculate.textContent = "Invalid Input";
+                }
+            form.reset();
+            
+            }
+        }
+
+        // form input validation
+        function validateForm() {
+            const numberValue = numberInput.value.trim();
+            let isValid = true;
+
+            if (numberValue === '') {
+                numberError.textContent = 'Number is required';
+                isValid = false;
+            } else {
+                numberError.textContent = ''
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
